@@ -1,4 +1,49 @@
-*{
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+/* Body Styles */
+body {
+  min-height: 100vh; /* Ensures the body covers at least the full height of the viewport */
+  background: #161513;
+  color: white;
+  font-family: "Outfit", sans-serif; /* Add a fallback font for better compatibility */
+  line-height: 1.5; /* Improves readability */
+  padding: 20px; /* Adds some padding around the content */
+  display: flex; /* Makes the body a flex container */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive Typography */
+body {
+  font-size: 16px; /* Base font size */
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Smaller font size for tablets and below */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px; /* Even smaller font size for mobile devices */
+    padding: 10px; /* Reduces padding on smaller screens */
+  }
+}
+
+
+
+
+
+
+
+/* *{
   margin: 0;
   padding: 0;
 }
@@ -8,4 +53,4 @@ body {
   background: #161513;
   color: white;
   font-family: "outfit";
-}
+} */
